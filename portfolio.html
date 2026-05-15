@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lakshmi Prasanna | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#111827;
+      position:fixed;
+      top:0;
+      z-index:1000;
+      box-shadow:0 0 15px rgba(0,0,0,0.5);
+    }
+
+    nav h2{
+      color:#38bdf8;
+      font-size:28px;
+    }
+
+    nav ul{
+      display:flex;
+      gap:25px;
+      list-style:none;
+      flex-wrap:wrap;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    nav ul li a:hover{
+      color:#38bdf8;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:120px 10%;
+      background:linear-gradient(to right,#0f172a,#1e293b);
+    }
+
+    .hero-content h1{
+      font-size:60px;
+      margin-bottom:10px;
+    }
+
+    .hero-content span{
+      color:#38bdf8;
+    }
+
+    .hero-content h3{
+      font-size:28px;
+      margin-bottom:20px;
+      color:#cbd5e1;
+    }
+
+    .hero-content p{
+      max-width:750px;
+      margin:auto;
+      color:#d1d5db;
+      font-size:18px;
+    }
+
+    /* SECTION */
+
+    section{
+      padding:90px 10%;
+    }
+
+    .title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+      color:#38bdf8;
+    }
+
+    /* CARDS */
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:20px;
+      transition:0.4s;
+      box-shadow:0 0 15px rgba(56,189,248,0.2);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 20px #38bdf8;
+    }
+
+    .card h3{
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    /* SKILLS */
+
+    .skills-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:15px;
+      justify-content:center;
+    }
+
+    .skill{
+      padding:12px 22px;
+      background:#1e293b;
+      border-radius:30px;
+      box-shadow:0 0 10px rgba(56,189,248,0.3);
+      transition:0.3s;
+    }
+
+    .skill:hover{
+      background:#38bdf8;
+      color:black;
+      transform:scale(1.08);
+    }
+
+    /* CONTACT */
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:10px 0;
+      font-size:18px;
+    }
+
+    .contact a{
+      color:#38bdf8;
+      text-decoration:none;
+    }
+
+    .contact a:hover{
+      text-decoration:underline;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      color:#cbd5e1;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .hero-content h1{
+        font-size:40px;
+      }
+
+      .hero-content h3{
+        font-size:22px;
+      }
+
+      .title{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <h2>Portfolio</h2>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="about">
+
+    <div class="hero-content">
+
+      <h1><span>Lakshmi Prasanna</span></h1>
+
+      <h3>Information Technology Student & Web Developer</h3>
+
+      <p>
+        Dedicated and enthusiastic Fourt-year Information Technology student
+        passionate about Web Development, Java, Problem Solving, and building
+        modern responsive applications. Looking forward to gaining real-world
+        experience and contributing positively to innovative projects.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+
+  <section id="education">
+
+    <h2 class="title">Education</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>B.Tech - Information Technology</h3>
+        <p>Vasireddy Venkatadri Institute of Technology</p>
+        <p>2023 - 2027</p>
+        <p><strong>CGPA:</strong> 9.13</p>
+      </div>
+
+      <div class="card">
+        <h3>Intermediate - MPC</h3>
+        <p>Sri Chaitanya Junior College</p>
+        <p>2021 - 2023</p>
+        <p><strong>Percentage:</strong> 97.4%</p>
+      </div>
+
+      <div class="card">
+        <h3>Schooling</h3>
+        <p>ZP High School</p>
+        <p>2020 - 2021</p>
+        <p><strong>Percentage:</strong> 98.33%</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2 class="title">Skills</h2>
+
+    <div class="skills-list">
+
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React JS</div>
+      <div class="skill">Java</div>
+      <div class="skill">JSP</div>
+      <div class="skill">Servlets</div>
+      <div class="skill">Hibernate</div>
+      <div class="skill">Spring</div>
+      <div class="skill">SQL</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">VS Code</div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>SWACHHGRAM</h3>
+
+        <p>
+          Village sanitation awareness and reporting application
+          focused on improving hygiene practices through awareness
+          campaigns and public engagement.
+        </p>
+      </div>
+
+      <div class="card">
+
+        <h3>Interactive Stopwatch Web App</h3>
+
+        <p>
+          Developed a responsive stopwatch with lap recording,
+          millisecond accuracy, dark/light mode toggle,
+          and modern UI using JavaScript and CSS.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+
+  <section id="achievements">
+
+    <h2 class="title">Achievements</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Academic Topper</h3>
+        <p>Ranked 1st in the batch during 1st year.</p>
+      </div>
+
+      <div class="card">
+        <h3>800+ Problems Solved</h3>
+        <p>Solved over 800 coding problems in CodeChef.</p>
+      </div>
+
+      <div class="card">
+        <h3>Hackathons</h3>
+        <p>Participated in Smart India Hackathon and INNOVAHACK.</p>
+      </div>
+
+      <div class="card">
+        <h3>Research Fellow</h3>
+        <p>Working in 100Giga x B2 Fellowship Program.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATIONS -->
+
+  <section>
+
+    <h2 class="title">Certifications</h2>
+
+    <div class="grid">
+
+      <div class="card">Programming using Java - Infosys</div>
+
+      <div class="card">Joy of Computing Using Python - NPTEL</div>
+
+      <div class="card">Technical WordPress SEO - LinkedIn</div>
+
+      <div class="card">Web Development - SkillCraft</div>
+
+      <div class="card">Generative AI by Google Cloud</div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact">
+
+    <h2 class="title">Contact</h2>
+
+    <p>📧 Email: pasyavulaprasanna@gmail.com</p>
+
+    <p>
+      💼 LinkedIn:
+      <a href="https://www.linkedin.com/in/lakshmi-prasanna-pasyavula-b64963349?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+         target="_blank">
+         Visit LinkedIn Profile
+      </a>
+    </p>
+
+    <p>
+      💻 GitHub:
+      <a href="https://github.com/" target="_blank">
+        Visit GitHub
+      </a>
+    </p>
+
+    <p>📞 Phone: 6303346058</p>
+
+    <p>📍 Guntur, Andhra Pradesh</p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Lakshmi Prasanna | All Rights Reserved
+  </footer>
+
+</body>
+</html>
